@@ -3,7 +3,7 @@
 Simple AngularJS application with simulating streaming market data.
 Skeleton was created using angular-seed.
 
-Task runners (like webpack, grunt, gulp) and features (es6 for example) is not added to project and not used, but can.
+Task runners (like webpack, grunt, gulp) and features (es6 for example) is not added to project and not used, but can be added in feature.
 
 **Startup guide**
 
