@@ -1,0 +1,25 @@
+
+<div>
+  <input type="text" ng-model="toAdd" ng-required="required">
+  <button type="button" ng-click="add()">Add</button>
+</div>
+<table width="100%" align="center">
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Last</th>
+      <th>Change</th>
+      <th>High</th>
+      <th>Low</th>
+    </tr>
+  </thead>
+  <tbody align="center">
+  <tr ng-repeat="item in data track by $index">
+    <td>{{ item.symbol }}</td>
+    <td>{{ item.last }}</td>
+    <td>{{ item.change }}</td>
+    <td>{{ item.high }}</td>
+    <td>{{ item.low }}</td>
+  </tr>
+  </tbody>
+</table>
