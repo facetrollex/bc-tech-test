@@ -21,7 +21,7 @@
   </thead>
   <tbody align="center">
   <tr ng-repeat="item in data track by $index">
-    <td>{{ item.symbol }}</td>
+    <td>{{ ::item.symbol }}</td>
     <td>{{ item.last }}</td>
     <td ng-class="{ up: item.change > 0, down: item.change < 0 }">
       {{ (item.change > 0 ? '+' : '') + item.change }}

@@ -40,11 +40,9 @@ service('ViewFactory', ['$interval', function ($interval) {
     data.push(_generateModel(symbol));
   };
 
-
   $interval(function () {
     data.forEach(function (item) {
       var newPrice = _generateRandomPrice(minPrice, maxPrice);
-
 
       if(newPrice < item.low) {
         item.low = newPrice;
